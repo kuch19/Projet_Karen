@@ -12,4 +12,10 @@ typedef struct model_cercle{
 	double r;
 } CERCLE;
 
+typedef struct model_convex{
+	POINT p;
+	double pente; 
+} CONVEX;
+
+
 #endif

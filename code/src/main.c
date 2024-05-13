@@ -6,6 +6,7 @@
 #include "variables.h"
 #include "creationcoordonnes.h"
 #include "generationfichier.h"
+#include "sidecenter.h"
 
 int N, choix, xmin, xmax, ymin, ymax, inf, sup;
 

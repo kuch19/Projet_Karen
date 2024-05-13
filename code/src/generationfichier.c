@@ -5,6 +5,7 @@
 #include "variables.h"
 #include "algowelz.h"
 #include "dessiner.h"
+#include "sidecenter.h"
 
 FILE *file;
 void GenerationFichierSVG(POINT* tab , int N, int choix){
@@ -31,6 +32,18 @@ void GenerationFichierSVG(POINT* tab , int N, int choix){
   if(choix == 1) {
     //solution_algo_naif(tab, file, N); //CALCULE ET DESSINE
   }else if (choix == 2){
+    POINT center;
+    center.x = 5;
+    center.y = 0; 
+    POINT* I = malloc(N * sizeof(POINT));
+    I[0].x = 2; 
+    I[0].y = 2; 
+    I[1].x = 3; 
+    I[1].y = 3; 
+    I[2].x = 5; 
+    I[2].y = 1; 
+    int cote = side_center(center,I, 3);
+    printf("COTE %.d", cote);
     solution_welz(tab, file, N); //CALCULE ET DESSINE
   }  
   //fin du programme et fermer le fichier

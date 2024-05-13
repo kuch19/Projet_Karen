@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "dessiner.h": "c",
-        "variables.h": "c"
+        "variables.h": "c",
+        "structures.h": "c"
     }
 }
