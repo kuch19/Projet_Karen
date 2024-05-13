@@ -4,7 +4,6 @@
 #include "structures.h"
 #include "variables.h"
 #include "algowelz.h"
-#include "algonaif.h"
 #include "dessiner.h"
 
 FILE *file;
