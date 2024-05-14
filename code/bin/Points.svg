@@ -9,25 +9,25 @@ xmlns="http://www.w3.org/2000/svg" style="background-color: white">
 <line x1="100" y1="100" x2="100" y2="1900" stroke="black" />
 <text x="100" y="100" font-family="Arial" font-size="20">1</text>
 <text x="100" y="1900" font-family="Arial" font-size="20">20</text>
-<circle cx="1521.052632" cy="1331.578947" r="8" stroke="black" stroke-width="1" fill="black"/>
-<circle cx="1331.578947" cy="100.000000" r="8" stroke="black" stroke-width="1" fill="black"/>
-<circle cx="763.157895" cy="384.210526" r="8" stroke="black" stroke-width="1" fill="black"/>
-<circle cx="668.421053" cy="1710.526316" r="8" stroke="black" stroke-width="1" fill="black"/>
-<circle cx="952.631579" cy="1236.842105" r="8" stroke="black" stroke-width="1" fill="black"/>
-<circle cx="289.473684" cy="1426.315789" r="8" stroke="black" stroke-width="1" fill="black"/>
-<circle cx="384.210526" cy="763.157895" r="8" stroke="black" stroke-width="1" fill="black"/>
+<circle cx="763.157895" cy="1521.052632" r="8" stroke="black" stroke-width="1" fill="black"/>
+<circle cx="100.000000" cy="1047.368421" r="8" stroke="black" stroke-width="1" fill="black"/>
+<circle cx="1236.842105" cy="1047.368421" r="8" stroke="black" stroke-width="1" fill="black"/>
+<circle cx="1142.105263" cy="1805.263158" r="8" stroke="black" stroke-width="1" fill="black"/>
+<circle cx="1710.526316" cy="763.157895" r="8" stroke="black" stroke-width="1" fill="black"/>
+<circle cx="194.736842" cy="478.947368" r="8" stroke="black" stroke-width="1" fill="black"/>
+<circle cx="1805.263158" cy="1710.526316" r="8" stroke="black" stroke-width="1" fill="black"/>
 <circle cx="1047.368421" cy="1142.105263" r="8" stroke="black" stroke-width="1" fill="black"/>
-<circle cx="1047.368421" cy="194.736842" r="8" stroke="black" stroke-width="1" fill="black"/>
-<circle cx="289.473684" cy="478.947368" r="8" stroke="black" stroke-width="1" fill="black"/>
+<circle cx="289.473684" cy="1426.315789" r="8" stroke="black" stroke-width="1" fill="black"/>
+<circle cx="289.473684" cy="857.894737" r="8" stroke="black" stroke-width="1" fill="black"/>
+<circle cx="194.736842" cy="194.736842" r="8" stroke="black" stroke-width="1" fill="black"/>
+<circle cx="1426.315789" cy="1331.578947" r="8" stroke="black" stroke-width="1" fill="black"/>
+<circle cx="1426.315789" cy="1142.105263" r="8" stroke="black" stroke-width="1" fill="black"/>
+<circle cx="857.894737" cy="668.421053" r="8" stroke="black" stroke-width="1" fill="black"/>
+<circle cx="1805.263158" cy="1615.789474" r="8" stroke="black" stroke-width="1" fill="black"/>
+<circle cx="668.421053" cy="384.210526" r="8" stroke="black" stroke-width="1" fill="black"/>
+<circle cx="952.631579" cy="384.210526" r="8" stroke="black" stroke-width="1" fill="black"/>
+<circle cx="1047.368421" cy="1805.263158" r="8" stroke="black" stroke-width="1" fill="black"/>
 <circle cx="1331.578947" cy="1805.263158" r="8" stroke="black" stroke-width="1" fill="black"/>
-<circle cx="1710.526316" cy="1047.368421" r="8" stroke="black" stroke-width="1" fill="black"/>
-<circle cx="1236.842105" cy="384.210526" r="8" stroke="black" stroke-width="1" fill="black"/>
-<circle cx="952.631579" cy="857.894737" r="8" stroke="black" stroke-width="1" fill="black"/>
-<circle cx="1615.789474" cy="478.947368" r="8" stroke="black" stroke-width="1" fill="black"/>
-<circle cx="668.421053" cy="194.736842" r="8" stroke="black" stroke-width="1" fill="black"/>
-<circle cx="478.947368" cy="952.631579" r="8" stroke="black" stroke-width="1" fill="black"/>
-<circle cx="1521.052632" cy="1047.368421" r="8" stroke="black" stroke-width="1" fill="black"/>
-<circle cx="289.473684" cy="1710.526316" r="8" stroke="black" stroke-width="1" fill="black"/>
-<circle cx="668.421053" cy="668.421053" r="8" stroke="black" stroke-width="1" fill="black"/>
-<circle cx="883.732057" cy="952.631579" r="963.092647" stroke="red" stroke-width="3" fill="transparent" fill-opacity="0" />
+<circle cx="1710.526316" cy="952.631579" r="8" stroke="black" stroke-width="1" fill="black"/>
+<circle cx="1000.000000" cy="952.631579" r="1105.826924" stroke="red" stroke-width="3" fill="transparent" fill-opacity="0" />
 </svg>

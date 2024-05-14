@@ -33,15 +33,15 @@ void GenerationFichierSVG(POINT* tab , int N, int choix){
     //solution_algo_naif(tab, file, N); //CALCULE ET DESSINE
   }else if (choix == 2){
     POINT center;
-    center.x = 5;
+    center.x = 0;
     center.y = 0; 
     POINT* I = malloc(N * sizeof(POINT));
-    I[0].x = 2; 
+    I[0].x = 1; 
     I[0].y = 2; 
-    I[1].x = 3; 
-    I[1].y = 3; 
-    I[2].x = 5; 
-    I[2].y = 1; 
+    I[1].x = 2; 
+    I[1].y = 2; 
+    I[2].x = 3; 
+    I[2].y = 2; 
     int cote = side_center(center,I, 3);
     printf("COTE %.d", cote);
     solution_welz(tab, file, N); //CALCULE ET DESSINE

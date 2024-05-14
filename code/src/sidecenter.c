@@ -21,22 +21,29 @@ int in_convex(POINT center, POINT* I, int N){
         I[i].x = I[i].x-x_decalage;
         I[i].y = I[i].y-y_decalage+1;
     }
+    for(int i = 0; i< N ; i++){
+        printf(" %.2f,%.2f ", I[i].x, I[i].y) ;
+    }
+    ///Verification des points avec x = 0
+    for(int i = 0; i< N ; i++){
+        if(I[i].x == 0 && I[i].y<0 ){
+            //INTERIEUR
+            return 0;
+        }
+    }
     int gauche = 0;
     int droite = 0; 
     CONVEX *pentes_gauche = malloc(N * sizeof(CONVEX));
     CONVEX *pentes_droite = malloc(N * sizeof(CONVEX));
     for(int i = 0; i< N ; i++){
         CONVEX res;
-        if(I[i].x == 0){
-            res.p = I[i];
-            res.pente = INFINITY;
-        }else if(I[i].x <0){
+        if(I[i].x < 0){
             //La on cherche le max
             res.p = I[i];
             res.pente = I[i].y/I[i].x;
             pentes_gauche[gauche] = res;
             gauche = gauche + 1;
-        }else {
+        }else if(I[i].x > 0){
             //La on cherche le min
             res.p = I[i];
             res.pente = I[i].y/I[i].x;
@@ -74,13 +81,7 @@ int in_convex(POINT center, POINT* I, int N){
         pente_min.p.y = 1;
         pente_min.pente = INFINITY;    
     }
-    ///Verification des points avec x = 0
-    for(int i = 0; i< N ; i++){
-        if(I[i].x == 0 && I[i].y<0 ){
-            //INTERIEUR
-            return 0;
-        }
-    }
+
     ///Analyse des pentes 
     if(pente_min.pente!= INFINITY && pente_max.pente != (INFINITY * -1)){
         if(pente_min.pente > pente_max.pente){
@@ -99,23 +100,26 @@ int in_convex(POINT center, POINT* I, int N){
 }
 
 int side_center (POINT center, POINT* contour, int longueur){
+    int res = INF;
     if(longueur == 1){
-        return contour[0].y;
+        res = contour[0].y;
     }else if (longueur == 2){
-        return ((contour[0].y+contour[1].y)/2);
+        res = (contour[0].y+contour[1].y)/2;
     }else{
         /// On a au moins trois points 
         POINT *contour_copy = malloc(longueur * sizeof(POINT));
         for(int i = 0; i< longueur ; i++){
             contour_copy[i] = contour[i];
         }
-        double res = in_convex(center,contour_copy, longueur);
-        if (res == 0){
-            return 0; 
-        }else if (res > 0){
-            return 1;             
+        double s = in_convex(center,contour_copy, longueur);
+        if (s == 0){
+            res = 0; 
+        }else if (s > 0){
+            res = 1;             
         }else{
-            return -1;
+            res = -1;
         }
     }
+    printf("cote %d", res);
+    return res;
 }
